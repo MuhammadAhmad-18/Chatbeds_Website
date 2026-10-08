@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PageLink as Link } from "./PageLink";
 import { Logo } from "./Logo";
 
 export function BrandLogo({ footer = false }: { footer?: boolean }) {

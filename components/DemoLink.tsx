@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { PageLink as Link } from "./PageLink";
 import type { ComponentProps } from "react";
 import { demoBookingUrl } from "@/lib/site-links";
 

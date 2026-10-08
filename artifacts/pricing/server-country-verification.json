@@ -1,0 +1,46 @@
+﻿[
+    {
+        "query":  "",
+        "geo":  "US",
+        "status":  200,
+        "expected":  "United States",
+        "hasCountry":  true,
+        "hasPricedArticles":  0,
+        "pendingPanel":  true,
+        "title":  "Pricing - ChatBeds",
+        "canonical":  "https://chatbeds.app/pricing"
+    },
+    {
+        "query":  "?country=PK\u0026rooms=20\u0026billing=monthly",
+        "geo":  "US",
+        "status":  200,
+        "expected":  "Pakistan",
+        "hasCountry":  true,
+        "hasPricedArticles":  4,
+        "pendingPanel":  false,
+        "title":  "Pricing - ChatBeds",
+        "canonical":  "https://chatbeds.app/pricing"
+    },
+    {
+        "query":  "?country=DE",
+        "geo":  "PK",
+        "status":  200,
+        "expected":  "Germany",
+        "hasCountry":  true,
+        "hasPricedArticles":  0,
+        "pendingPanel":  true,
+        "title":  "Pricing - ChatBeds",
+        "canonical":  "https://chatbeds.app/pricing"
+    },
+    {
+        "query":  "?country=ZZ",
+        "geo":  "",
+        "status":  200,
+        "expected":  "your country",
+        "hasCountry":  true,
+        "hasPricedArticles":  0,
+        "pendingPanel":  true,
+        "title":  "Pricing - ChatBeds",
+        "canonical":  "https://chatbeds.app/pricing"
+    }
+]

@@ -1,0 +1,70 @@
+﻿{
+  "checks": [
+    {
+      "expectedPath": "/",
+      "label": "logo",
+      "overflow": false,
+      "path": "/",
+      "y": 0
+    },
+    {
+      "expectedPath": "/about",
+      "label": "About",
+      "overflow": false,
+      "path": "/about",
+      "y": 0
+    },
+    {
+      "expectedPath": "/contact",
+      "label": "Contact",
+      "overflow": false,
+      "path": "/contact",
+      "y": 0
+    },
+    {
+      "expectedPath": "/",
+      "label": "cached home",
+      "overflow": false,
+      "path": "/",
+      "y": 0
+    },
+    {
+      "expectedPath": "/",
+      "label": "same homepage logo",
+      "overflow": false,
+      "path": "/",
+      "y": 0
+    },
+    {
+      "expectedPath": "/pricing",
+      "label": "Pricing",
+      "overflow": false,
+      "path": "/pricing",
+      "y": 0
+    },
+    {
+      "expectedPath": "/pricing",
+      "label": "same Pricing page",
+      "overflow": false,
+      "path": "/pricing",
+      "y": 0
+    },
+    {
+      "expectedPath": "/book-a-demo",
+      "label": "Demo",
+      "overflow": false,
+      "path": "/book-a-demo",
+      "y": 0
+    },
+    {
+      "expectedPath": "/book-a-demo",
+      "label": "same Demo page",
+      "overflow": false,
+      "path": "/book-a-demo",
+      "y": 0
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "viewport": 390
+}

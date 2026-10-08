@@ -1,0 +1,186 @@
+﻿{
+  "passed": true,
+  "roundingAssumption": "Nearest PKR100: 750 rounds to800",
+  "results": [
+    {
+      "rooms": 20,
+      "billing": "monthly",
+      "plan": "essentials",
+      "available": true,
+      "perRoomEffective": 250,
+      "monthlyTotal": 5000,
+      "billedAmount": 5000,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 0,
+      "roomNightsEquivalent": 0.6,
+      "isQuote": false
+    },
+    {
+      "rooms": 20,
+      "billing": "monthly",
+      "plan": "pro",
+      "available": true,
+      "perRoomEffective": 420,
+      "monthlyTotal": 8400,
+      "billedAmount": 8400,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 0,
+      "roomNightsEquivalent": 0.9,
+      "isQuote": false
+    },
+    {
+      "rooms": 3,
+      "billing": "monthly",
+      "plan": "essentials",
+      "available": true,
+      "perRoomEffective": 250,
+      "monthlyTotal": 800,
+      "billedAmount": 800,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 0,
+      "roomNightsEquivalent": 0.1,
+      "isQuote": false
+    },
+    {
+      "rooms": 3,
+      "billing": "monthly",
+      "plan": "pro",
+      "available": true,
+      "perRoomEffective": 420,
+      "monthlyTotal": 1300,
+      "billedAmount": 1300,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 0,
+      "roomNightsEquivalent": 0.1,
+      "isQuote": false
+    },
+    {
+      "rooms": 20,
+      "billing": "yearly",
+      "plan": "essentials",
+      "available": true,
+      "perRoomEffective": 250,
+      "monthlyTotal": 5000,
+      "billedAmount": 50000,
+      "billingNote": "Billed yearly · 2 months free",
+      "volumeDiscountPct": 0,
+      "roomNightsEquivalent": 0.5,
+      "isQuote": false
+    },
+    {
+      "rooms": 20,
+      "billing": "yearly",
+      "plan": "pro",
+      "available": true,
+      "perRoomEffective": 420,
+      "monthlyTotal": 8400,
+      "billedAmount": 84000,
+      "billingNote": "Billed yearly · 2 months free",
+      "volumeDiscountPct": 0,
+      "roomNightsEquivalent": 0.8,
+      "isQuote": false
+    },
+    {
+      "rooms": 60,
+      "billing": "monthly",
+      "plan": "essentials",
+      "available": true,
+      "perRoomEffective": 212.5,
+      "monthlyTotal": 12800,
+      "billedAmount": 12800,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 15,
+      "roomNightsEquivalent": 1.4,
+      "isQuote": false
+    },
+    {
+      "rooms": 60,
+      "billing": "monthly",
+      "plan": "pro",
+      "available": true,
+      "perRoomEffective": 357,
+      "monthlyTotal": 21400,
+      "billedAmount": 21400,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 15,
+      "roomNightsEquivalent": 2.4,
+      "isQuote": false
+    },
+    {
+      "rooms": 200,
+      "billing": "monthly",
+      "plan": "essentials",
+      "available": true,
+      "perRoomEffective": 187.5,
+      "monthlyTotal": 37500,
+      "billedAmount": 37500,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 25,
+      "roomNightsEquivalent": 4.2,
+      "isQuote": false
+    },
+    {
+      "rooms": 200,
+      "billing": "monthly",
+      "plan": "pro",
+      "available": true,
+      "perRoomEffective": 315,
+      "monthlyTotal": 63000,
+      "billedAmount": 63000,
+      "billingNote": "Billed monthly",
+      "volumeDiscountPct": 25,
+      "roomNightsEquivalent": 7,
+      "isQuote": false
+    },
+    {
+      "payg55": {
+        "nightsSold": 330,
+        "cost": 9240,
+        "proMonthly": 8400,
+        "cheaperPlan": "pro",
+        "difference": 840,
+        "breakEvenOccupancyPct": 50
+      },
+      "payg40": {
+        "nightsSold": 240,
+        "cost": 6720,
+        "proMonthly": 8400,
+        "cheaperPlan": "payg",
+        "difference": 1680,
+        "breakEvenOccupancyPct": 50
+      },
+      "tie50": {
+        "nightsSold": 300,
+        "cost": 8400,
+        "proMonthly": 8400,
+        "cheaperPlan": "pro",
+        "difference": 0,
+        "breakEvenOccupancyPct": 50
+      },
+      "group": {
+        "available": true,
+        "perRoomEffective": 350,
+        "monthlyTotal": null,
+        "billedAmount": null,
+        "billingNote": "Minimum bill applies",
+        "volumeDiscountPct": 0,
+        "roomNightsEquivalent": null,
+        "isQuote": true
+      }
+    },
+    {
+      "pending": "AE",
+      "result": {
+        "available": false,
+        "perRoomEffective": null,
+        "monthlyTotal": null,
+        "billedAmount": null,
+        "billingNote": "",
+        "volumeDiscountPct": 0,
+        "roomNightsEquivalent": null,
+        "isQuote": false,
+        "reason": "Local pricing is being finalised."
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+﻿[
+    {
+        "bodyFont":  "14px",
+        "columns":  "307.25px 307.25px 307.25px 307.25px",
+        "compareMobile":  "none",
+        "overflow":  false,
+        "scrollWidth":  1440,
+        "width":  1440
+    },
+    {
+        "bodyFont":  "14px",
+        "columns":  "283.25px 283.25px 283.25px 283.25px",
+        "compareMobile":  "none",
+        "overflow":  false,
+        "scrollWidth":  1280,
+        "width":  1280
+    },
+    {
+        "bodyFont":  "14px",
+        "columns":  "465px 465px",
+        "compareMobile":  "none",
+        "overflow":  false,
+        "scrollWidth":  1024,
+        "width":  1024
+    },
+    {
+        "bodyFont":  "14px",
+        "columns":  "341px 341px",
+        "compareMobile":  "none",
+        "overflow":  false,
+        "scrollWidth":  768,
+        "width":  768
+    },
+    {
+        "bodyFont":  "14px",
+        "columns":  "354px",
+        "compareMobile":  "block",
+        "overflow":  false,
+        "scrollWidth":  390,
+        "width":  390
+    },
+    {
+        "bodyFont":  "14px",
+        "columns":  "324px",
+        "compareMobile":  "block",
+        "overflow":  false,
+        "scrollWidth":  360,
+        "width":  360
+    }
+]

@@ -1,5 +1,5 @@
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
-import Link from "next/link";
+import { PageLink as Link } from "./PageLink";
 import { company, contactEmail } from "@/lib/company";
 import { BrandLogo } from "./BrandLogo";
 import { DemoButton } from "./DemoProvider";
