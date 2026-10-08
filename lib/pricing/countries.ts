@@ -1,5 +1,9 @@
 import type { CountryPricing, PendingCountryPricing } from "./types";
 
+// TODO: Add approved payment logo assets only after files exist in public/.
+// Keys are method names in lowercase, with spaces replaced by hyphens.
+export const paymentLogos: Readonly<Record<string, { src: string; width: number; height: number }>> = {};
+
 function pending(
   code: string,
   name: string,

@@ -13,6 +13,7 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { Logo } from "./Logo";
 import { DemoLink } from "./DemoLink";
+import { loginUrl } from "@/lib/site-links";
 import {
   WhatsAppComposer,
   WhatsAppDate,
@@ -85,7 +86,7 @@ export function PageHero({
 
 export function PageActions({
   secondary = "Explore the Platform",
-  href = "/#platform",
+  href = loginUrl,
 }: {
   secondary?: string;
   href?: string;

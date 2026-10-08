@@ -27,8 +27,8 @@ export function PricingHero({ country }: { country: CountryPricing }) {
           {country.status === "confirmed" ? (
             <>
               <p>
-                For a typical 20-room property in Pakistan, ChatBeds Pro costs
-                about <strong>one room night a month or less.</strong>
+                For a typical property, ChatBeds Pro costs less than{" "}
+                <strong>one room night a month.</strong>
               </p>
               <span>
                 <Check size={14} aria-hidden="true" />

@@ -5,6 +5,7 @@ import type {
   PlanId,
   PlanPrice,
 } from "./types";
+import { foundingOffer, hasFoundingOffer } from "./config";
 
 export const volumeDiscounts = [
   { aboveRooms: 150, percent: 25 },
@@ -26,11 +27,13 @@ export function calcPlanPrice({
   plan,
   rooms,
   billing,
+  promotionDiscountPct = 0,
 }: {
   country: CountryPricing;
   plan: PlanId;
   rooms: number;
   billing: BillingCycle;
+  promotionDiscountPct?: number;
 }): PlanPrice {
   const count = normaliseRooms(rooms);
   const empty: PlanPrice = {
@@ -67,7 +70,7 @@ export function calcPlanPrice({
     volumeDiscounts.find((discount) => count > discount.aboveRooms)?.percent ??
     0;
   const perRoomEffective =
-    country.perRoom[plan] * (1 - volumeDiscountPct / 100);
+    country.perRoom[plan] * (1 - Math.max(volumeDiscountPct, promotionDiscountPct) / 100);
   const monthlyTotal =
     Math.round((perRoomEffective * count) / country.rounding.totalStep) *
     country.rounding.totalStep;
@@ -87,6 +90,15 @@ export function calcPlanPrice({
     isQuote: false,
   };
 }
+export function calcFoundingPrice(input: {
+  country: CountryPricing;
+  plan: PlanId;
+  rooms: number;
+  billing: BillingCycle;
+}): PlanPrice | null {
+  if (!hasFoundingOffer(input.country) || (input.plan !== "essentials" && input.plan !== "pro")) return null;
+  return calcPlanPrice({ ...input, promotionDiscountPct: foundingOffer.discountPct });
+}
 export function calcPayAsYouStay({
   country,
   rooms,
@@ -102,6 +114,8 @@ export function calcPayAsYouStay({
     ? Math.min(100, Math.max(0, occupancyPct))
     : 55;
   const nightsSold = Math.round((count * 30 * occupancy) / 100);
+  // TODO: Confirm whether pay-as-you-stay receives volume discounts.
+  // Until approved, its per-sold-night rate stays unchanged at every room count.
   const cost = nightsSold * country.payAsYouStayPerRoomNight;
   const proMonthly = calcPlanPrice({
     country,

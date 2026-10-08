@@ -1,7 +1,16 @@
 import { paymentText } from "./countries";
 import type { CountryPricing } from "./types";
+import { trial } from "./config";
 export function pricingFAQ(country: CountryPricing) {
   return [
+    {
+      question: "Can I try ChatBeds for free?",
+      answer: `Yes, properties with 1 to 3 rooms can use ChatBeds Free, with no time limit. Larger properties start on Essentials or Pro.${trial.enabled && trial.text.trim() ? ` ${trial.text.trim()}` : ""}`,
+    },
+    {
+      question: "What happens to my data if I cancel?",
+      answer: "You can export your data for free at any time, and monthly plans can be cancelled any time.",
+    },
     {
       question: "Why do prices differ by country?",
       answer:

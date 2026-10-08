@@ -19,6 +19,7 @@ export function ScrollReveal() {
         ".section-heading, .pillar, .ai-grid article, .property-list article",
       )
       .forEach((element) => {
+        if (element.closest("#workflow")) return;
         element.classList.add("reveal-ready");
         observer.observe(element);
       });

@@ -8,6 +8,8 @@
   --border: #e5deee;
   --text: #2c243a;
   --muted: #6c6378;
+  --logo-chat: #1800A2;
+  --logo-beds: #D16046;
   --purple: #623acb;
   --purple-dark: #5130af;
   --purple-soft: #eee6fc;
@@ -2768,6 +2770,10 @@ img {
   white-space: nowrap;
   color: var(--text);
 }
+.footer-legal, .footer-socials { display: flex; flex-wrap: wrap; gap: 16px; }
+.footer-legal { font-size: 12px; }
+.footer-legal a, .footer-socials a { display: inline-flex; align-items: center; min-height: 44px; }
+.footer-socials a { justify-content: center; min-width: 44px; color: var(--purple-dark); }
 
 /* Accessible demo dialog */
 .demo-dialog {

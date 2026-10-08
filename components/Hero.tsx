@@ -2,6 +2,7 @@ import { ArrowRight, Check, MoveUpRight } from "lucide-react";
 import { DemoButton } from "./DemoProvider";
 import { DashboardFrame } from "./DashboardFrame";
 import { ChatPhoneMockup } from "./ChatPhoneMockup";
+import { loginUrl } from "@/lib/site-links";
 
 export function Hero() {
   return (
@@ -24,7 +25,7 @@ export function Hero() {
           </p>
           <div className="hero-actions">
             <DemoButton />
-            <a href="#platform" className="button button-secondary">
+            <a href={loginUrl} className="button button-secondary">
               Explore the Platform <ArrowRight size={17} />
             </a>
           </div>

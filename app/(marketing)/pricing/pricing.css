@@ -1,6 +1,42 @@
 .pricing-page {
   --pricing-sticky-height: 179px;
 }
+.pricing-founding-offer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding-block: 18px 0;
+  color: var(--purple-dark);
+  font-size: 14px;
+}
+.pricing-founding-offer svg { flex-shrink: 0; margin-top: 3px; }
+.pricing-founding-offer small { display: block; color: var(--muted); font-size: 12px; margin-top: 4px; }
+.pricing-founding-price { color: var(--purple-dark); font-size: 12px; margin-top: 10px; }
+.pricing-founding-price small { display: block; color: var(--muted); }
+.pricing-payment-chips, .pricing-customer-logos, .pricing-policy-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 12px;
+}
+.pricing-payment-chips li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text);
+}
+.pricing-payment-chips img { max-width: 54px; height: 22px; object-fit: contain; }
+.pricing-payment-ownership { font-size: 12px; }
+.pricing-customer-logos { align-items: center; }
+.pricing-customer-logos img { max-width: 140px; max-height: 64px; object-fit: contain; }
+.pricing-policy-list li { display: flex; align-items: center; gap: 8px; color: var(--success); }
+.pricing-testimonials figure { margin: 24px 0; padding: 24px; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 12px; }
+.pricing-testimonials blockquote { margin: 0; }
+.pricing-testimonials figcaption { margin-top: 12px; color: var(--muted); font-size: 14px; }
 html:has(.pricing-page) {
   scroll-padding-top: 0;
 }

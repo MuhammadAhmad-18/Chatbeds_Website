@@ -12,21 +12,26 @@ export function PayAsYouStay({
 }) {
   const [occupancy, setOccupancy] = useState(55);
   const result = calcPayAsYouStay({ country, rooms, occupancyPct: occupancy });
+  // Derive the banner, comparison and debounced announcement from this one result.
+  const comparison = result
+    ? `At ${occupancy}% occupancy, pay-as-you-stay costs ${formatMoney(result.cost, country)} per month. Regular Pro costs ${formatMoney(result.proMonthly, country)} per month (monthly billing). ${
+        result.difference === 0
+          ? "Both cost the same."
+          : `${result.cheaperPlan === "payg" ? "Pay-as-you-stay" : "Pro"} is ${formatMoney(result.difference, country)} cheaper.`
+      }`
+    : "";
+  const breakEven = result
+    ? `Pro breaks even at about ${Math.round(result.breakEvenOccupancyPct)}% occupancy.`
+    : "";
   const [announcement, setAnnouncement] = useState("");
   const liveText = result
-    ? `At ${occupancy}% occupancy, ${result.nightsSold} room nights sold. Pay-as-you-stay costs ${formatMoney(result.cost, country)}. Pro costs ${formatMoney(result.proMonthly, country)} per month.`
+    ? `${result.nightsSold} room nights sold. ${comparison} ${breakEven}`
     : "";
   useEffect(() => {
     const timer = window.setTimeout(() => setAnnouncement(liveText), 400);
     return () => window.clearTimeout(timer);
   }, [liveText]);
   if (!result) return null;
-  const comparison =
-    result.difference === 0
-      ? `At ${occupancy}% occupancy, pay-as-you-stay and Pro cost the same (${formatMoney(result.proMonthly, country)}).`
-      : result.cheaperPlan === "payg"
-        ? `At ${occupancy}% occupancy, pay-as-you-stay costs ${formatMoney(result.cost, country)}, which is ${formatMoney(result.difference, country)} less than Pro.`
-        : `Pro is cheaper at this occupancy. Time to switch (Pro: ${formatMoney(result.proMonthly, country)}).`;
   return (
     <section className="container pricing-payg" aria-labelledby="payg-heading">
       <div className="pricing-payg-intro">
@@ -67,8 +72,7 @@ export function PayAsYouStay({
         <p>{comparison}</p>
         <small>
           <ArrowRight size={12} aria-hidden="true" />
-          Pro breaks even at about {Math.round(result.breakEvenOccupancyPct)}%
-          occupancy.
+          {breakEven}
         </small>
       </div>
       <p

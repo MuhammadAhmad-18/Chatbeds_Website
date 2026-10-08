@@ -9,6 +9,7 @@ import {
 import { PageLink } from "@/components/PageLink";
 import {
   calcPlanPrice,
+  calcFoundingPrice,
   formatMoney,
   formatPerRoom,
   recommendPlan,
@@ -73,6 +74,7 @@ export function PlanCards({
             billing: selection.billing,
           });
           const active = recommended === plan.id;
+          const foundingPrice = calcFoundingPrice({ country, plan: plan.id, rooms: selection.rooms, billing: selection.billing });
           const effectiveMonthly =
             price.billedAmount === null
               ? null
@@ -143,6 +145,12 @@ export function PlanCards({
                     )}
                   </>
                 )}
+                {foundingPrice && (
+                  <p className="pricing-founding-price">
+                    Founding price: {formatMoney(selection.billing === "yearly" ? foundingPrice.billedAmount! / 12 : foundingPrice.monthlyTotal!, country)} / month
+                    {selection.billing === "yearly" && <small>{formatMoney(foundingPrice.billedAmount!, country)} billed yearly</small>}
+                  </p>
+                )}
                 {(plan.id === "essentials" || plan.id === "pro") && (
                   <p className="pricing-room-nights">
                     <Check size={13} aria-hidden="true" />={" "}
@@ -207,6 +215,9 @@ export function PlanCards({
           );
         })}
       </div>
+      <p className="pricing-trademark-note">
+        Based on a typical room rate of {formatMoney(country.typicalRoomRate, country)} a night.
+      </p>
       <div className="pricing-trust-line">
         <span>
           <LockKeyhole size={14} aria-hidden="true" />

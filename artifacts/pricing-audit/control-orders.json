@@ -1,0 +1,582 @@
+﻿{
+  "cases": [
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > occupancy > billing > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > occupancy > country > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > billing > occupancy > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > billing > country > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > country > occupancy > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > country > billing > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > rooms > billing > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > rooms > country > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > billing > rooms > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > billing > country > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > country > rooms > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > country > billing > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > rooms > occupancy > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > rooms > country > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > occupancy > rooms > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > occupancy > country > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > country > rooms > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > country > occupancy > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > rooms > occupancy > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > rooms > billing > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > occupancy > rooms > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > occupancy > billing > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > billing > rooms > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > billing > occupancy > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "rooms > occupancy > billing > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "rooms > occupancy > country > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "rooms > billing > occupancy > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "rooms > billing > country > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "rooms > country > occupancy > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "rooms > country > billing > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "occupancy > rooms > billing > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "occupancy > rooms > country > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "occupancy > billing > rooms > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "occupancy > billing > country > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "occupancy > country > rooms > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "occupancy > country > billing > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "billing > rooms > occupancy > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "billing > rooms > country > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "billing > occupancy > rooms > country",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "billing > occupancy > country > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "billing > country > rooms > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "billing > country > occupancy > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "country > rooms > occupancy > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "country > rooms > billing > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "country > occupancy > rooms > billing",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "country > occupancy > billing > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 30,
+      "order": "country > billing > rooms > occupancy",
+      "rooms": 20
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 30,
+      "order": "country > billing > occupancy > rooms",
+      "rooms": 20
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > occupancy > billing > country",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > occupancy > country > billing",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > billing > occupancy > country",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > billing > country > occupancy",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > country > occupancy > billing",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > country > billing > occupancy",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > rooms > billing > country",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > rooms > country > billing",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > billing > rooms > country",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > billing > country > rooms",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > country > rooms > billing",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > country > billing > rooms",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > rooms > occupancy > country",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > rooms > country > occupancy",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > occupancy > rooms > country",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > occupancy > country > rooms",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > country > rooms > occupancy",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > country > occupancy > rooms",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > rooms > occupancy > billing",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > rooms > billing > occupancy",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > occupancy > rooms > billing",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > occupancy > billing > rooms",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > billing > rooms > occupancy",
+      "rooms": 50
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > billing > occupancy > rooms",
+      "rooms": 50
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > occupancy > billing > country",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > occupancy > country > billing",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > billing > occupancy > country",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > billing > country > occupancy",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "rooms > country > occupancy > billing",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "rooms > country > billing > occupancy",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > rooms > billing > country",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > rooms > country > billing",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > billing > rooms > country",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > billing > country > rooms",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "occupancy > country > rooms > billing",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "occupancy > country > billing > rooms",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > rooms > occupancy > country",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > rooms > country > occupancy",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > occupancy > rooms > country",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > occupancy > country > rooms",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "billing > country > rooms > occupancy",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "billing > country > occupancy > rooms",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > rooms > occupancy > billing",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > rooms > billing > occupancy",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > occupancy > rooms > billing",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > occupancy > billing > rooms",
+      "rooms": 60
+    },
+    {
+      "billing": "yearly",
+      "occupancy": 55,
+      "order": "country > billing > rooms > occupancy",
+      "rooms": 60
+    },
+    {
+      "billing": "monthly",
+      "occupancy": 55,
+      "order": "country > billing > occupancy > rooms",
+      "rooms": 60
+    }
+  ],
+  "error": null,
+  "passed": true
+}

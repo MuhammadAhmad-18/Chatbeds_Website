@@ -6,11 +6,10 @@ import { PricingHero } from "@/components/pricing/PricingHero";
 import { PricingCalculator } from "@/components/pricing/PricingCalculator";
 import { CompareTable } from "@/components/pricing/CompareTable";
 import { WhatsAppCosts } from "@/components/pricing/WhatsAppCosts";
-import { WaysToSave } from "@/components/pricing/WaysToSave";
 import { AddOns } from "@/components/pricing/AddOns";
 import { NoSurprises } from "@/components/pricing/NoSurprises";
-import { PricingFAQ } from "@/components/pricing/PricingFAQ";
-import { PaymentMethods } from "@/components/pricing/PaymentMethods";
+import { Testimonial } from "@/components/pricing/Testimonial";
+import { CustomerLogos } from "@/components/pricing/CustomerLogos";
 import { PageCTA } from "@/components/MarketingPage";
 import "./pricing.css";
 
@@ -49,14 +48,7 @@ export default async function PricingPage({
   return (
     <div className="pricing-page">
       <PricingHero country={country} />
-      <PricingCalculator initial={initial}>
-        <PaymentMethods country={country} />
-        <CompareTable />
-        <WhatsAppCosts />
-        <WaysToSave country={country} />
-        <AddOns />
-        <NoSurprises />
-        <PricingFAQ country={country} />
+      <PricingCalculator initial={initial} details={<><CustomerLogos /><Testimonial /><CompareTable /><WhatsAppCosts /></>} beforeFAQ={<><AddOns /><NoSurprises /></>}>
         <div className="pricing-final-cta">
           <PageCTA title="Ready to run your property differently?">
             Tell us about your property and we’ll show you how ChatBeds works

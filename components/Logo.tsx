@@ -1,4 +1,4 @@
-import { brandColors, logoMarkPaths, logoWordmarkPath } from "@/lib/logo-artwork";
+import { brandColors, logoMarkPaths, logoWordmarkPaths } from "@/lib/logo-artwork";
 
 export type LogoProps = {
   variant?: "full" | "icon";
@@ -9,9 +9,8 @@ export type LogoProps = {
 };
 
 type LogoPalette = {
-  purple: string;
-  orange: string;
-  wordmark: string;
+  chat: string;
+  beds: string;
   white: string;
   ink: string;
 };
@@ -54,7 +53,10 @@ export function LogoArtwork({
           <circle key={cx} cx={cx} cy="17" r="3.4" fill={palette.white} />
         ))}
       {variant === "full" && (
-        <path d={logoWordmarkPath} fill={palette.wordmark} />
+        <>
+          <path d={logoWordmarkPaths.chat} fill={palette.chat} />
+          <path d={logoWordmarkPaths.beds} fill={palette.beds} />
+        </>
       )}
     </svg>
   );
@@ -63,18 +65,16 @@ export function LogoArtwork({
 /** Inline SVG only; no client directive, bitmap, font dependency or layout shift. */
 export function Logo({ tone = "default", ...props }: LogoProps) {
   const mono = tone === "mono";
-  const ink = mono ? "currentColor" : `var(--text, ${brandColors.text})`;
   return LogoArtwork({
     ...props,
     mono,
     palette: {
-      purple: mono
-        ? ink
-        : tone === "light"
-          ? `var(--purple-light, ${brandColors.purpleLight})`
-          : `var(--purple, ${brandColors.purple})`,
-      orange: mono ? ink : `var(--orange, ${brandColors.orange})`,
-      wordmark: tone === "light" ? brandColors.white : ink,
+      chat: mono
+        ? "currentColor"
+        : `var(--logo-chat, ${brandColors.blue})`,
+      beds: mono
+        ? "currentColor"
+        : `var(--logo-beds, ${brandColors.orange})`,
       white: "#ffffff",
       ink: "#000000",
     },

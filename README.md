@@ -50,7 +50,7 @@ Login links go directly to `https://app.chatbeds.app`, and `/login` redirects th
 
 Set `NEXT_PUBLIC_DEMO_URL` in `.env.local` for local development and in the Google Cloud build environment for deployment. Restart local development after changing it. Next.js includes public variables in browser assets at build time, so rebuild and redeploy when the booking URL changes.
 
-The compact header centers About, Integrations, How it works, Pricing, Blog and Contact on desktop. Each has a dedicated page, with three integration detail pages and three practical Blog guides. Unavailable documentation and legal pages remain omitted to avoid broken destinations.
+The compact header centers Integrations, How it works, Pricing, Company, Resources and Contact on desktop. About and Blog are grouped under Company; Privacy Policy and Terms and Conditions are grouped under Resources. The shared configuration in `lib/navigation.ts` controls destinations and availability for desktop navigation, mobile accordions and footer columns. News, Careers, Developer docs and Help Center remain hidden until their routes or approved external URLs are available. Existing Privacy and Terms pages are noindex drafts pending legal review. The three integration detail pages and three practical Blog guides remain available.
 
 ## Assets and content
 
@@ -58,11 +58,11 @@ The compact header centers About, Integrations, How it works, Pricing, Blog and 
 
 Shared artwork and literal social colors are in `lib/logo-artwork.ts`. `app/icon.svg` duplicates the same icon geometry for the favicon. `app/apple-icon.tsx` and `app/opengraph-image.tsx` reuse the vector renderer with Next.js `ImageResponse` on the original navy background. If editing the icon paths, update the favicon to match. The obsolete standalone PNG/JPEG logos and JPEG favicon have been removed. The supplied composite banner remains in `public/brand/` as a source asset, unused by the homepage. Product UIs are code-native illustrations of the capabilities in AGENTS.md, not actual product screenshots. Sample hotel activity and financial figures are labeled illustrative. No customer or performance claims are used.
 
-Most sections render on the server. Client components provide the accessible navigation, native modal, selectable workflow, role examples and commercial tabs. Motion respects reduced-motion preferences. Tailwind utilities and the custom design system in `app/globals.css` can be reused on future pages.
+Most sections render on the server. Client components provide the accessible navigation, native modal, role examples and commercial tabs. Motion respects reduced-motion preferences. Tailwind utilities and the custom design system in `app/globals.css` can be reused on future pages.
 
 Messaging illustrations share the light WhatsApp-style header, wallpaper, bubbles and composer in `components/WhatsAppUI.tsx` and the scoped `app/whatsapp.css` stylesheet. They are visual examples, not live messaging controls. The guest inbox keeps the ChatBeds AI reply clearly marked as an unsent draft outside the conversation.
 
-The homepage housekeeping workflow follows native page scrolling in both directions. Its seven steps, completed circles, WhatsApp message and PMS room status share one active stage. A finite sticky scene releases into the next section; selecting a step or Replay workflow jumps to its corresponding scroll position. `components/useScrollWorkflow.ts` caches geometry and processes passive scroll events through requestAnimationFrame; `app/workflow.css` keeps the visual stable. On mobile, a compact seven-step rail replaces the long list. Reduced-motion preferences and viewports too short to fit the scene use a compact manual workflow without extra scroll travel. No animation library or timer is required.
+The housekeeping workflow on the homepage and How it works page is a static, server-rendered story. Three stages explain checkout and the cleaning alert, the cleaner's WhatsApp reply and supervisor inspection, and a Ready room visible to front desk. The complete conversation and final PMS state are shown together without step controls, replay, scroll pinning or extra scroll travel. `components/WhatsAppWorkflow.tsx` contains the presentation and `app/workflow.css` supplies responsive styles. The generic ScrollReveal observer excludes this section, so its content remains visible without scroll-triggered animation.
 
 ## Dependency audit
 

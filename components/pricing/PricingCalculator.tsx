@@ -11,13 +11,22 @@ import type { PricingSelection } from "@/lib/pricing/types";
 import { PricingControls } from "./PricingControls";
 import { PlanCards } from "./PlanCards";
 import { PayAsYouStay } from "./PayAsYouStay";
+import { FoundingOffer } from "./FoundingOffer";
+import { WaysToSave } from "./WaysToSave";
+import { PaymentMethods } from "./PaymentMethods";
+import { PricingPolicies } from "./PricingPolicies";
+import { PricingFAQ } from "./PricingFAQ";
 
 export function PricingCalculator({
   initial,
   children,
+  details,
+  beforeFAQ,
 }: {
   initial: PricingSelection;
   children: ReactNode;
+  details: ReactNode;
+  beforeFAQ: ReactNode;
 }) {
   const [selection, setSelection] = useState(initial);
   const [announcement, setAnnouncement] = useState("");
@@ -92,8 +101,15 @@ export function PricingCalculator({
         onChange={setSelection}
         announcement={announcement}
       />
+      <FoundingOffer country={country} />
       <PlanCards country={country} selection={selection} />
       <PayAsYouStay country={country} rooms={selection.rooms} />
+      <PaymentMethods country={country} />
+      <PricingPolicies />
+      {details}
+      <WaysToSave country={country} />
+      {beforeFAQ}
+      <PricingFAQ country={country} />
       {children}
     </>
   );

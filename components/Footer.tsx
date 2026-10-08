@@ -1,29 +1,19 @@
-import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone, Linkedin, Instagram, Facebook, Youtube, Globe2 } from "lucide-react";
 import { PageLink as Link } from "./PageLink";
 import { company, contactEmail } from "@/lib/company";
 import { BrandLogo } from "./BrandLogo";
 import { DemoButton } from "./DemoProvider";
 import { loginUrl } from "@/lib/site-links";
-const columns = [
-  {
-    title: "Product",
-    links: [
-      ["Complete PMS", "#platform"],
-      ["How it works", "/how-it-works"],
-      ["Integrations", "/integrations"],
-      ["Pricing", "/pricing"],
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      ["About ChatBeds", "/about"],
-      ["Blog", "/blog"],
-      ["Contact us", "/contact"],
-    ],
-  },
-];
+import { socials } from "@/lib/socials";
+import { backToTopNavigation, footerNavigation, legalNavigation } from "@/lib/navigation";
+const socialIcons = { linkedin: Linkedin, instagram: Instagram, facebook: Facebook, youtube: Youtube, website: Globe2 };
 export function Footer() {
+  const activeSocials = socials.filter((social) => {
+    try {
+      const url = new URL(social.url);
+      return (url.protocol === "https:" || url.protocol === "http:") && Boolean(url.hostname);
+    } catch { return false; }
+  });
   return (
     <footer className="site-footer">
       <div className="container">
@@ -58,14 +48,14 @@ export function Footer() {
               </div>
             </address>
           </div>
-          {columns.map((column) => (
+          {footerNavigation.map((column) => (
             <div className="footer-column" key={column.title}>
               <h3>{column.title}</h3>
               <ul>
-                {column.links.map(([label, href]) => (
-                  <li key={label}>
-                    <Link href={href.startsWith("#") ? `/${href}` : href}>
-                      {label}
+                {column.links.map((item) => (
+                  <li key={item.id}>
+                    <Link href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}>
+                      {item.footerLabel || item.label}
                     </Link>
                   </li>
                 ))}
@@ -82,12 +72,24 @@ export function Footer() {
             </a>
           </div>
         </div>
+        {activeSocials.length > 0 && (
+          <nav className="footer-socials" aria-label="ChatBeds social profiles">
+            {activeSocials.map((social) => {
+              const Icon = socialIcons[social.network];
+              return <a key={social.url} href={social.url} aria-label={social.label} target="_blank" rel="noopener noreferrer"><Icon size={20} aria-hidden="true" /></a>;
+            })}
+          </nav>
+        )}
         <div className="footer-bottom">
           <span>
             © {new Date().getUTCFullYear()} {company.name}. All rights reserved.
           </span>
-          <span></span>
-          <Link href="/#home">Back to top ↑</Link>
+          <nav className="footer-legal" aria-label="Legal">
+            {legalNavigation.map((item) => (
+              <Link key={item.id} href={item.href}>{item.footerLabel || item.label}</Link>
+            ))}
+          </nav>
+          <Link href={backToTopNavigation.href}>{backToTopNavigation.label}</Link>
         </div>
       </div>
     </footer>

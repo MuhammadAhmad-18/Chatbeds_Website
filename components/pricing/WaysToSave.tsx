@@ -6,8 +6,7 @@ import {
   Sparkles,
 } from "lucide-react";
 import type { CountryPricing } from "@/lib/pricing/types";
-// TODO: Confirm whether Founding 100 is live; disabled unless explicitly enabled.
-const foundingEnabled = process.env.NEXT_PUBLIC_FOUNDING_100_ENABLED === "true";
+import { foundingOfferText, hasFoundingOffer } from "@/lib/pricing/config";
 export function WaysToSave({ country }: { country: CountryPricing }) {
   const items = [
     {
@@ -33,12 +32,12 @@ export function WaysToSave({ country }: { country: CountryPricing }) {
           ? "10% off for members of hotel associations, including the Pakistan Hotels Association."
           : "10% off for members of hotel associations. Ask us about your association.",
     },
-    ...(foundingEnabled
+    ...(hasFoundingOffer(country)
       ? [
           {
             icon: Sparkles,
             title: "Founding 100",
-            text: "The first 100 properties in your country get 40% off, locked for as long as you stay.",
+            text: `${foundingOfferText(country)} Essentials and Pro only. Does not combine with volume discounts or referrals.`,
           },
         ]
       : []),

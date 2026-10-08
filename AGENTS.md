@@ -342,7 +342,7 @@ ChatBeds workflow:
 
 This should be shown visually.
 
-A centerpiece website section should animate a flow similar to:
+The centerpiece website section should present a clear, static flow similar to:
 
 **Guest checks out**
 
@@ -373,7 +373,7 @@ Supervisor:
 
 **Front Desk sees room availability instantly**
 
-This can be built as a polished workflow animation with cards, connectors, status changes, and a WhatsApp-style phone mockup.
+Present the complete workflow with a concise three-stage explanation, a WhatsApp-style conversation and the final PMS room state. Keep every stage and message visible without scroll pinning, step selection or changing messages.
 
 ---
 
@@ -678,7 +678,8 @@ Base:
 - White surfaces with pale lavender and soft peach section accents
 
 Brand:
-- ChatBeds orange for logo / selected highlights
+- Logo: Blue `#1800A2` for “Chat” and the chat bubble; Orange `#D16046` for “Beds” and the bed frame
+- Orange for selected interface highlights
 - Purple / violet as primary interactive accent
 
 Supporting:

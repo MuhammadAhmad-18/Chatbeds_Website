@@ -4,12 +4,11 @@ import {
   LockKeyhole,
   ReceiptText,
   ShieldCheck,
-  X,
 } from "lucide-react";
 const items = [
   { icon: ShieldCheck, text: "No setup fee" },
   { icon: Check, text: "0% commission on direct bookings" },
-  { icon: X, text: "Cancel any time" },
+  { icon: Check, text: "Cancel any time" },
   { icon: Download, text: "Free data export" },
   { icon: LockKeyhole, text: "Price locked for 12 months" },
   { icon: ReceiptText, text: "Tax shown separately at checkout" },
