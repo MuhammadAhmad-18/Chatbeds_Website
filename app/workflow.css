@@ -1,0 +1,85 @@
+/* A finite native scroll story; without JS the first scene remains in normal flow. */
+.workflow-track { margin-top: 34px; }
+.workflow-track[data-scroll-mode="true"] {
+  height: calc(var(--workflow-scene-height) + var(--workflow-travel));
+}
+.workflow-track[data-scroll-mode="true"] .workflow-scene {
+  position: sticky;
+  top: 20px;
+}
+.workflow-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+.workflow-controls p { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 12px; }
+.workflow-controls .live-dot { width: 5px; height: 5px; box-shadow: none; }
+.workflow-controls .workflow-play { min-height: 44px; margin: 0; font-size: 11px; }
+.workflow-scene .workflow-layout { margin-top: 0; align-items: center; gap: 56px; }
+.workflow-scene .workflow-step { padding-block: 13px; min-height: 68px; }
+.workflow-scene .workflow-step strong { font-size: 14px; }
+.workflow-scene .workflow-step small { font-size: 12px; }
+.workflow-scene .workflow-step.active.completed .step-number { background: var(--purple-soft); border-color: var(--purple-border); color: var(--purple-dark); }
+.workflow-scene .workflow-step .step-number svg { animation: workflow-check .2s ease-out; }
+.workflow-mobile-current { display: none; }
+.workflow-scene .workflow-board { width: 100%; padding: 22px; max-width: none; }
+.workflow-scene .workflow-room { margin-top: 18px; padding: 20px 16px 16px; }
+.workflow-scene .workflow-room h3 { font-size: 24px; }
+.workflow-scene .workflow-room p { font-size: 10px; }
+.workflow-scene .workflow-room > .status { top: 22px; right: 14px; font-size: 9px; }
+.workflow-scene .status-progress { margin-top: 20px; }
+.workflow-scene .status-progress span { font-size: 8px; }
+.workflow-scene .workflow-link { height: 32px; }
+.workflow-scene .wa-workflow-messages { height: 166px; min-height: 166px; padding: 14px 18px; }
+.workflow-scene .workflow-outcome { font-size: 10px; margin-top: 14px; min-height: 20px; }
+.workflow-scene .workflow-board-label { font-size: 8px; }
+.workflow-scene .workflow-board-label > span:last-child { font-size: 8px; }
+@keyframes workflow-check { from { opacity: .2; transform: scale(.7); } to { opacity: 1; transform: scale(1); } }
+@media (max-width: 1199px) {
+  .workflow-scene .workflow-layout { gap: 28px; }
+  .workflow-scene .workflow-board { padding: 18px; }
+  .workflow-scene .workflow-step strong { font-size: 13px; }
+  .workflow-scene .workflow-step small { font-size: 11px; }
+}
+@media (max-width: 899px) {
+  .workflow-scene .workflow-layout { display: grid; grid-template-columns: minmax(0,1fr); gap: 12px; max-width: 540px; margin-inline: auto; }
+  .workflow-scene .workflow-steps { display: grid; grid-template-columns: repeat(7,minmax(0,1fr)); gap: 2px; }
+  .workflow-scene .workflow-steps:before { left: 22px; right: 22px; top: 22px; bottom: auto; height: 1px; border: 0; background: var(--border); }
+  .workflow-scene .workflow-step { justify-content: center; min-height: 44px; padding: 0; gap: 0; background: none; }
+  .workflow-scene .step-number { height: 36px; width: 36px; font-size: 10px; }
+  .workflow-scene .workflow-step > span:nth-child(2), .workflow-scene .workflow-step > svg { display: none; }
+  .workflow-mobile-current { display: block; min-height: 90px; padding: 4px 6px 6px; }
+  .workflow-mobile-current > span { color: var(--purple-dark); letter-spacing: .09em; font-size: 9px; font-weight: 650; }
+  .workflow-mobile-current strong { display: block; font-size: 17px; line-height: 1.35; margin-top: 3px; letter-spacing: -.02em; }
+  .workflow-mobile-current p { color: var(--muted); font-size: 12px; line-height: 1.55; margin-top: 4px; }
+  .workflow-scene .workflow-board { padding: 15px; }
+  .workflow-scene .workflow-room { margin-top: 12px; padding: 14px 11px 12px; }
+  .workflow-scene .workflow-room-icon { width: 38px; height: 38px; }
+  .workflow-scene .workflow-room-icon svg { width: 23px; }
+  .workflow-scene .workflow-room h3 { font-size: 21px; }
+  .workflow-scene .workflow-room p { font-size: 9px; }
+  .workflow-scene .workflow-room small { font-size: 7px; }
+  .workflow-scene .workflow-room > .status { top: 15px; right: 9px; font-size: 8px; padding: 4px 6px; }
+  .workflow-scene .status-progress { margin-top: 14px; gap: 4px; }
+  .workflow-scene .status-progress span { font-size: 7px; padding-top: 7px; }
+  .workflow-scene .workflow-link { height: 24px; }
+  .workflow-scene .wa-header { padding: 10px 11px; }
+  .workflow-scene .wa-workflow-messages { height: 154px; min-height: 154px; padding: 12px 16px; gap: 9px; }
+  .workflow-scene .wa-bubble { max-width: 94%; }
+  .workflow-scene .wa-bubble p { font-size: 12px; }
+  .workflow-scene .workflow-outcome { margin-top: 10px; font-size: 9px; }
+}
+@media (max-width: 499px) {
+  .workflow-controls { gap: 8px; margin-bottom: 14px; }
+  .workflow-controls p { font-size: 10px; gap: 5px; max-width: 135px; line-height: 1.5; }
+  .workflow-controls .workflow-play { font-size: 10px; padding-inline: 10px; gap: 6px; }
+  .workflow-scene .workflow-board-label { letter-spacing: .035em; font-size: 7px; }
+  .workflow-scene .workflow-board-label > span:last-child { font-size: 7px; }
+  .workflow-scene .workflow-board { padding: 12px; }
+  .workflow-scene .workflow-room > div:first-child { gap: 8px; }
+  .workflow-scene .workflow-room > .status { font-size: 7px; }
+  .workflow-scene .wa-header-actions { gap: 9px; }
+  .workflow-scene .wa-contact strong { font-size: 11px; }
+  .workflow-scene .wa-contact small { font-size: 9px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .workflow-track[data-scroll-mode="true"] { height: auto; }
+  .workflow-track[data-scroll-mode="true"] .workflow-scene { position: static; }
+  .workflow-scene *, .workflow-scene *:before { animation: none !important; transition: none !important; }
+}

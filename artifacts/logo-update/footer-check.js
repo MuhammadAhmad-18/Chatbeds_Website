@@ -1,0 +1,1 @@
+﻿document.querySelector('footer').scrollIntoView();JSON.stringify({width:innerWidth,pageWidth:document.documentElement.scrollWidth,footerLogo:(()=>{const s=document.querySelector('.brand-logo-footer svg'),r=s.getBoundingClientRect();return {width:r.width,height:r.height,viewBox:s.getAttribute('viewBox')}})()})

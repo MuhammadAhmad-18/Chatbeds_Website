@@ -1,0 +1,55 @@
+.blog-main { min-width: 0; }
+.blog-index { padding-block: 82px 110px; }
+.blog-intro { max-width: 730px; margin-bottom: 55px; }
+.blog-intro h1, .guide-header h1 { color: var(--text); font-size: clamp(34px, 4.1vw, 56px); line-height: 1.1; letter-spacing: -.045em; font-weight: 650; margin-top: 22px; }
+.blog-intro h1 span { color: var(--muted); }
+.blog-intro p, .guide-header > p { font-size: 17px; line-height: 1.8; color: var(--muted); margin-top: 24px; max-width: 640px; }
+.blog-feature { display: grid; grid-template-columns: 1.1fr 1fr; border-block: 1px solid var(--border); padding-block: 42px; gap: 70px; align-items: center; }
+.blog-category { font-size: 10px; letter-spacing: .13em; color: var(--purple-dark); font-weight: 650; }
+.blog-feature h2 { font-size: clamp(26px, 2.5vw, 35px); line-height: 1.2; letter-spacing: -.035em; margin-top: 18px; max-width: 510px; }
+.blog-feature h2 a:hover { color: var(--purple-dark); }
+.blog-feature-copy > p { font-size: 15px; line-height: 1.85; color: var(--muted); margin-top: 18px; max-width: 500px; }
+.blog-read-link { display: inline-flex; align-items: center; gap: 10px; color: var(--purple-dark); font-size: 14px; font-weight: 600; min-height: 44px; margin-top: 18px; }
+.blog-workflow { padding: 32px; border-radius: 15px; border: 1px solid var(--border); background: var(--surface-soft); }
+.blog-room-label { display: block; font-size: 9px; letter-spacing: .11em; color: var(--muted); margin-bottom: 25px; }
+.blog-status { display: flex; gap: 12px; justify-content: space-between; align-items: center; padding: 18px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 9px; font-size: 13px; }
+.blog-status small { padding: 5px 8px; background: #fff1e5; color: var(--orange-ink, #a64614); border-radius: 5px; font-size: 10px; }
+.blog-status .blog-ready { display: inline-flex; align-items: center; gap: 5px; color: var(--success); background: #eaf6ef; }
+.blog-chat { display: flex; align-items: center; gap: 12px; max-width: 230px; margin: 25px auto; padding: 17px; background: #d9fdd3; border-radius: 9px; color: #18513c; font-size: 16px; }
+.blog-chat svg:last-child { margin-left: auto; }
+.blog-workflow > p { color: var(--muted); font-size: 11px; text-align: center; margin-top: 22px; }
+.guide-page { padding-block: 40px 100px; }
+.guide-back { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 13px; min-height: 44px; }
+.guide-header { max-width: 870px; padding-block: 40px 45px; margin-inline: auto; border-bottom: 1px solid var(--border); }
+.guide-header > p { max-width: 740px; }
+.guide-body { max-width: 760px; margin-inline: auto; padding-top: 40px; }
+.guide-lead { font-size: 17px; line-height: 1.85; color: var(--muted); }
+.guide-steps { list-style: none; padding: 0; margin: 45px 0; }
+.guide-steps li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 20px; padding-block: 28px; border-top: 1px solid var(--border); }
+.guide-step-number { color: var(--purple-dark); font-size: 13px; font-weight: 650; padding-top: 6px; }
+.guide-steps h2, .guide-takeaway h2, .guide-cta h2 { font-size: 23px; line-height: 1.3; letter-spacing: -.025em; }
+.guide-steps p, .guide-takeaway p, .guide-cta p { font-size: 16px; line-height: 1.85; color: var(--muted); margin-top: 14px; }
+.guide-command { display: inline-flex; align-items: center; gap: 25px; padding: 12px 18px; margin-top: 20px; background: #d9fdd3; color: #18513c; border-radius: 7px; font-size: 15px; }
+.guide-takeaway { padding: 30px; background: var(--surface-soft); border: 1px solid var(--border); border-radius: 12px; }
+.guide-takeaway p { font-size: 15px; }
+.guide-takeaway strong { color: var(--text); }
+.guide-cta { margin-top: 50px; }
+.guide-cta .button { margin-top: 25px; }
+.guide-cta > a { display: inline-flex; align-items: center; gap: 7px; min-height: 44px; margin: 15px 0 0 22px; font-size: 14px; color: var(--purple-dark); }
+.guide-cta > a.button-primary { color: white; margin: 25px 0 0; min-height: 48px; font-size: 13px; gap: 13px; }
+@media (max-width: 767px) {
+  .blog-index { padding-block: 50px 65px; }
+  .blog-intro { margin-bottom: 35px; }
+  .blog-intro p, .guide-header > p { font-size: 16px; }
+  .blog-feature { grid-template-columns: 1fr; gap: 30px; padding-block: 30px; }
+  .blog-workflow { padding: 22px; }
+  .blog-status { font-size: 12px; padding: 16px 12px; }
+  .guide-page { padding-block: 24px 65px; }
+  .guide-header { padding-block: 25px 35px; }
+  .guide-header h1 { font-size: 36px; }
+  .guide-body { padding-top: 30px; }
+  .guide-steps li { grid-template-columns: 26px minmax(0, 1fr); gap: 12px; }
+  .guide-steps h2, .guide-takeaway h2, .guide-cta h2 { font-size: 21px; }
+  .guide-takeaway { padding: 24px; }
+  .guide-cta > a { margin-left: 0; display: flex; }
+}

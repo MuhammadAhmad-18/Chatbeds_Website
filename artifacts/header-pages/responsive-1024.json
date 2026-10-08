@@ -1,0 +1,310 @@
+﻿{
+  "failures": [],
+  "passed": true,
+  "results": [
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/about",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/integrations/whatsapp",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/integrations/guest-messaging",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/integrations/distribution",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/integrations",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/how-it-works",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/pricing",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/blog",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/contact",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/login",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/book-a-demo",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/blog/housekeeping-from-whatsapp",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/blog/maintenance-from-whatsapp",
+      "width": 1024
+    },
+    {
+      "actionButtons": [
+        {
+          "height": 44,
+          "label": "Login",
+          "width": 68
+        },
+        {
+          "height": 44,
+          "label": "Book a Demo",
+          "width": 116
+        }
+      ],
+      "duplicateIds": [],
+      "mainCount": 1,
+      "overflow": false,
+      "pageWidth": 1024,
+      "path": "/blog/connected-front-desk",
+      "width": 1024
+    }
+  ],
+  "viewport": [
+    1024,
+    1000
+  ]
+}

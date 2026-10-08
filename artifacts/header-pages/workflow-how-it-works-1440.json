@@ -1,0 +1,230 @@
+﻿{
+  "checks": [
+    {
+      "completed": 1,
+      "index": 0,
+      "message": "Guest checked out. Room 301 is marked for cleaning.",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 0,
+      "status": "Checked out"
+    },
+    {
+      "completed": 2,
+      "index": 1,
+      "message": "Room 301 is ready for cleaning. Assigned to your shift.",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 1,
+      "status": "To clean"
+    },
+    {
+      "completed": 3,
+      "index": 2,
+      "message": "Room 301 is ready for cleaning.",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 2,
+      "status": "Being cleaned"
+    },
+    {
+      "completed": 4,
+      "index": 3,
+      "message": "301 clean",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 3,
+      "status": "To inspect"
+    },
+    {
+      "completed": 5,
+      "index": 4,
+      "message": "Room 301 ready for inspection. Please review.",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 4,
+      "status": "To inspect"
+    },
+    {
+      "completed": 6,
+      "index": 5,
+      "message": "Inspection passed. Room 301 is Ready.",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 5,
+      "status": "Ready"
+    },
+    {
+      "completed": 7,
+      "index": 6,
+      "message": "Room 301 is available. Front desk is up to date.",
+      "phase": "forward",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 6,
+      "status": "Ready"
+    },
+    {
+      "completed": 7,
+      "index": 6,
+      "message": "Room 301 is available. Front desk is up to date.",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 6,
+      "status": "Ready"
+    },
+    {
+      "completed": 6,
+      "index": 5,
+      "message": "Inspection passed. Room 301 is Ready.",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 5,
+      "status": "Ready"
+    },
+    {
+      "completed": 5,
+      "index": 4,
+      "message": "Room 301 ready for inspection. Please review.",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 4,
+      "status": "To inspect"
+    },
+    {
+      "completed": 4,
+      "index": 3,
+      "message": "301 clean",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 3,
+      "status": "To inspect"
+    },
+    {
+      "completed": 3,
+      "index": 2,
+      "message": "Room 301 is ready for cleaning.",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 2,
+      "status": "Being cleaned"
+    },
+    {
+      "completed": 2,
+      "index": 1,
+      "message": "Room 301 is ready for cleaning. Assigned to your shift.",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 1,
+      "status": "To clean"
+    },
+    {
+      "completed": 1,
+      "index": 0,
+      "message": "Guest checked out. Room 301 is marked for cleaning.",
+      "phase": "reverse",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 0,
+      "status": "Checked out"
+    },
+    {
+      "completed": 4,
+      "index": 3,
+      "message": "301 clean",
+      "phase": "rapid jump",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 3,
+      "status": "To inspect"
+    },
+    {
+      "completed": 7,
+      "index": 6,
+      "message": "Room 301 is available. Front desk is up to date.",
+      "phase": "manual control",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 6,
+      "status": "Ready"
+    },
+    {
+      "completed": 3,
+      "index": 2,
+      "message": "Room 301 is ready for cleaning.",
+      "phase": "manual control",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 2,
+      "status": "Being cleaned"
+    },
+    {
+      "completed": 5,
+      "index": 4,
+      "message": "Room 301 ready for inspection. Please review.",
+      "phase": "manual control",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 4,
+      "status": "To inspect"
+    },
+    {
+      "completed": 1,
+      "index": 0,
+      "message": "Guest checked out. Room 301 is marked for cleaning.",
+      "phase": "replay",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 0,
+      "status": "Checked out"
+    },
+    {
+      "completed": 7,
+      "index": 6,
+      "message": "Room 301 is available. Front desk is up to date.",
+      "phase": "replay setup",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 6,
+      "status": "Ready"
+    },
+    {
+      "completed": 1,
+      "index": 0,
+      "message": "Guest checked out. Room 301 is marked for cleaning.",
+      "phase": "replay",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 0,
+      "status": "Checked out"
+    },
+    {
+      "completed": 7,
+      "index": 6,
+      "message": "Room 301 is available. Front desk is up to date.",
+      "phase": "replay setup",
+      "sceneBottom": 676,
+      "sceneTop": 20,
+      "stage": 6,
+      "status": "Ready"
+    }
+  ],
+  "failures": [],
+  "passed": true,
+  "viewport": [
+    1440,
+    1000
+  ]
+}

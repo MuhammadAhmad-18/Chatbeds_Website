@@ -1,0 +1,172 @@
+﻿{
+  "failures": [],
+  "passed": true,
+  "routeCount": 15,
+  "routes": [
+    {
+      "contentLength": 7187,
+      "description": "Run reservations, rooms, housekeeping, maintenance, guest communication, revenue and more in one complete PMS — while your team works directly from WhatsApp.",
+      "h1": [
+        "The PMS your entire hotel can use — from WhatsApp."
+      ],
+      "mainCount": 1,
+      "path": "/",
+      "status": 200,
+      "title": "ChatBeds — The In-Chat PMS for Modern Hospitality"
+    },
+    {
+      "contentLength": 2301,
+      "description": "A complete property management system with WhatsApp as the frontline operating interface. Learn the idea behind ChatBeds, a product of Bang Tech Inc.",
+      "h1": [
+        "Built around the property.And the people running it."
+      ],
+      "mainCount": 1,
+      "path": "/about",
+      "status": 200,
+      "title": "About us — ChatBeds"
+    },
+    {
+      "contentLength": 2462,
+      "description": "Connect your frontline team to the PMS through WhatsApp. Staff receive operational alerts and report work without returning to a desktop for every update.",
+      "h1": [
+        "A familiar conversation.A complete property operation."
+      ],
+      "mainCount": 1,
+      "path": "/integrations/whatsapp",
+      "status": 200,
+      "title": "WhatsApp operations — ChatBeds"
+    },
+    {
+      "contentLength": 2364,
+      "description": "Bring your hotel’s WhatsApp guest messages into a Unified Inbox. Connect replies, messaging flows and the guest journey with the platform running your property.",
+      "h1": [
+        "Every guest conversation.Part of the same stay."
+      ],
+      "mainCount": 1,
+      "path": "/integrations/guest-messaging",
+      "status": 200,
+      "title": "Guest messaging — ChatBeds"
+    },
+    {
+      "contentLength": 2229,
+      "description": "Manage distribution and calendar synchronization alongside the PMS. Review availability, linked rooms and rate plans in the same platform that manages the property.",
+      "h1": [
+        "Your rooms, rates and channels.A connected commercial picture."
+      ],
+      "mainCount": 1,
+      "path": "/integrations/distribution",
+      "status": 200,
+      "title": "Distribution & calendars — ChatBeds"
+    },
+    {
+      "contentLength": 1852,
+      "description": "Connect WhatsApp operations, guest messaging and distribution calendars with the complete ChatBeds property management system.",
+      "h1": [
+        "The conversations. The channels.One property platform."
+      ],
+      "mainCount": 1,
+      "path": "/integrations",
+      "status": 200,
+      "title": "Integrations — ChatBeds"
+    },
+    {
+      "contentLength": 2587,
+      "description": "Follow a checkout through cleaning, inspection and room readiness. See how staff WhatsApp replies update the complete ChatBeds PMS.",
+      "h1": [
+        "Something happens in your hotel.The right person knows what to do."
+      ],
+      "mainCount": 1,
+      "path": "/how-it-works",
+      "status": 200,
+      "title": "How it works — ChatBeds"
+    },
+    {
+      "contentLength": 2320,
+      "description": "Talk with ChatBeds about your property, team and workflows. Get current pricing and explore the complete PMS with WhatsApp operations.",
+      "h1": [
+        "Find the right fitfor your property."
+      ],
+      "mainCount": 1,
+      "path": "/pricing",
+      "status": 200,
+      "title": "Pricing for your property — ChatBeds"
+    },
+    {
+      "contentLength": 913,
+      "description": "Explore practical guides to connected hotel operations: housekeeping, maintenance and the front desk, with WhatsApp work connected to a complete PMS.",
+      "h1": [
+        "Good operations.One conversation at a time."
+      ],
+      "mainCount": 1,
+      "path": "/blog",
+      "status": 200,
+      "title": "Practical guides for hospitality teams — ChatBeds"
+    },
+    {
+      "contentLength": 1009,
+      "description": "Talk to ChatBeds about your property, product enquiries, pricing or account access. Email contact@chatbeds.app or call +1 (601) 978-7767.",
+      "h1": [
+        "Let’s talk aboutyour property."
+      ],
+      "mainCount": 1,
+      "path": "/contact",
+      "status": 200,
+      "title": "Contact us — ChatBeds"
+    },
+    {
+      "contentLength": 547,
+      "description": "Find your ChatBeds account sign-in link or contact the team for account-access help. New to ChatBeds? Explore the complete PMS in a demo.",
+      "h1": [
+        "Welcome back.Your property is waiting."
+      ],
+      "mainCount": 1,
+      "path": "/login",
+      "status": 200,
+      "title": "Access your account — ChatBeds"
+    },
+    {
+      "contentLength": 1275,
+      "description": "See the complete ChatBeds PMS and WhatsApp operations in action. Request a property-focused demo covering front desk, operations, guests and commercial tools.",
+      "h1": [
+        "Your whole property.One connected conversation."
+      ],
+      "mainCount": 1,
+      "path": "/book-a-demo",
+      "status": 200,
+      "title": "Book a Demo — ChatBeds"
+    },
+    {
+      "contentLength": 2298,
+      "description": "Follow a room from checkout through cleaning and supervisor inspection to Ready, with WhatsApp updates connected to the ChatBeds PMS.",
+      "h1": [
+        "From checkout to Ready: housekeeping from WhatsApp."
+      ],
+      "mainCount": 1,
+      "path": "/blog/housekeeping-from-whatsapp",
+      "status": 200,
+      "title": "Housekeeping from WhatsApp: checkout to Ready — ChatBeds"
+    },
+    {
+      "contentLength": 2222,
+      "description": "A practical guide to reporting room issues through WhatsApp and keeping maintenance tickets, assignments and completion visible in the ChatBeds PMS.",
+      "h1": [
+        "A room issue. A clear ticket. A connected team."
+      ],
+      "mainCount": 1,
+      "path": "/blog/maintenance-from-whatsapp",
+      "status": 200,
+      "title": "Room maintenance from WhatsApp — ChatBeds"
+    },
+    {
+      "contentLength": 2175,
+      "description": "Explore arrivals, departures, reservations, room readiness and guest conversations as one connected front desk operation in ChatBeds.",
+      "h1": [
+        "Your front desk needs the whole room story."
+      ],
+      "mainCount": 1,
+      "path": "/blog/connected-front-desk",
+      "status": 200,
+      "title": "A connected front desk — ChatBeds"
+    }
+  ]
+}

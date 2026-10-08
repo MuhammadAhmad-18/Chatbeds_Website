@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="ChatBeds">
+  <path d="M5 15C5 7.8 10.8 2 18 2H46C53.2 2 59 7.8 59 15V26C59 28.8 56.8 31 54 31H15L5 37L7.7 28.2C5.9 26.1 5 23.5 5 21ZM23.4 17a3.4 3.4 0 1 0-6.8 0a3.4 3.4 0 1 0 6.8 0ZM35.4 17a3.4 3.4 0 1 0-6.8 0a3.4 3.4 0 1 0 6.8 0ZM47.4 17a3.4 3.4 0 1 0-6.8 0a3.4 3.4 0 1 0 6.8 0Z" fill="#623acb" fill-rule="evenodd"/>
+  <path d="M18 3.5H46C52.3 3.5 57.5 8.7 57.5 15V16C45 10 20 9 6.5 16V15C6.5 8.7 11.7 3.5 18 3.5Z" fill="#ffffff" fill-rule="evenodd" opacity="0.14"/>
+  <path d="M8 38C8 34.7 10.7 32 14 32H27C29.2 32 31 33.8 31 36V41H8ZM33 36C33 33.8 34.8 32 37 32H50C53.3 32 56 34.7 56 38V41H33Z" fill="#ed7a2f" fill-rule="evenodd"/>
+  <path d="M14 33.5H27C28.4 33.5 29.5 34.6 29.5 36V37H9.7C10.2 35 12 33.5 14 33.5ZM37 33.5H50C52 33.5 53.8 35 54.3 37H34.5V36C34.5 34.6 35.6 33.5 37 33.5Z" fill="#ffffff" fill-rule="evenodd" opacity="0.28"/>
+  <path d="M8 42H56C58.2 42 60 43.8 60 46V49H4V46C4 43.8 5.8 42 8 42Z" fill="#ed7a2f" fill-rule="evenodd"/>
+  <path d="M8 43.5H56C57.3 43.5 58.5 44.7 58.5 46H5.5C5.5 44.7 6.7 43.5 8 43.5Z" fill="#ffffff" fill-rule="evenodd" opacity="0.27"/>
+  <path d="M5 49H59C61.2 49 63 50.8 63 53V62H57V56H7V62H1V53C1 50.8 2.8 49 5 49Z" fill="#ed7a2f" fill-rule="evenodd"/>
+  <path d="M5 50.5H59C60.4 50.5 61.5 51.6 61.5 53H2.5C2.5 51.6 3.6 50.5 5 50.5Z" fill="#ffffff" fill-rule="evenodd" opacity="0.27"/>
+  <path d="M7 54.5H57V56H7Z" fill="#000000" fill-rule="evenodd" opacity="0.15"/>
+  <circle cx="20" cy="17" r="3.4" fill="#ffffff"/>
+  <circle cx="32" cy="17" r="3.4" fill="#ffffff"/>
+  <circle cx="44" cy="17" r="3.4" fill="#ffffff"/>
+</svg>
+
