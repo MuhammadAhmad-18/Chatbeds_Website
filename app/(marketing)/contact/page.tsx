@@ -1,6 +1,6 @@
 import { DemoLink } from "@/components/DemoLink";
+import { ContactForm } from "@/components/ContactForm";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
-import { EnquiryForm } from "@/components/EnquiryForm";
 import { PageHero } from "@/components/MarketingPage";
 import { company, contactEmail } from "@/lib/company";
 import { pageMetadata } from "@/lib/page-metadata";
@@ -78,9 +78,7 @@ export default function ContactPage() {
               </DemoLink>
             </div>
           </div>
-          <div className="page-form-panel">
-            <EnquiryForm kind="contact" />
-          </div>
+          <ContactForm />
         </div>
       </section>
     </>

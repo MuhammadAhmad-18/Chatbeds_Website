@@ -89,7 +89,7 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-      <section className="page-section page-peach">
+      <section className="page-section page-peach workflow-setup-section">
         <div className="container page-editorial">
           <SectionIntro title="Connect people once. Keep responsibilities clear." />
           <div className="page-prose">

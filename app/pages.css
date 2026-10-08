@@ -172,6 +172,9 @@
 .page-cta-section {
   padding: 0 0 80px;
 }
+.workflow-setup-section + .page-cta-section {
+  padding-top: clamp(40px, 5vw, 80px);
+}
 .page-cta {
   display: flex;
   align-items: center;
@@ -763,7 +766,125 @@
   display: flex;
   justify-content: center;
 }
-.contact-layout,
+.contact-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(40px, 5vw, 72px);
+  align-items: start;
+}
+.contact-message-form {
+  min-width: 0;
+  padding: 42px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  box-shadow: 0 16px 48px var(--shadow-soft);
+}
+.contact-message-form > h2 {
+  font-size: clamp(27px, 2.3vw, 32px);
+  line-height: 1.25;
+  letter-spacing: -0.035em;
+}
+.contact-message-fields {
+  display: grid;
+  gap: 28px;
+  margin-top: 34px;
+}
+.contact-message-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.contact-message-form label {
+  display: block;
+  min-width: 0;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 550;
+}
+.contact-message-form input,
+.contact-message-form textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  margin-top: 9px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg);
+  padding: 17px 18px;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.5;
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.contact-message-form input {
+  min-height: 60px;
+}
+.contact-message-form textarea {
+  min-height: 178px;
+  resize: vertical;
+}
+.contact-message-form input::placeholder,
+.contact-message-form textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+.contact-message-form input:focus-visible,
+.contact-message-form textarea:focus-visible {
+  border-color: var(--purple);
+  background: var(--surface);
+  outline-offset: 3px;
+}
+.contact-message-note {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  margin-top: 23px;
+}
+.contact-message-submit.button {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 16px;
+  border-radius: 999px;
+  gap: 12px;
+  font-size: 16px;
+}
+.contact-message-status {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid var(--purple-border);
+  border-radius: 14px;
+  background: var(--surface-soft);
+}
+.contact-message-status > svg {
+  flex-shrink: 0;
+  color: var(--purple);
+  margin-top: 3px;
+}
+.contact-message-status strong {
+  font-size: 14px;
+  font-weight: 600;
+}
+.contact-message-status p {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.contact-message-status a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+  margin-top: 6px;
+  color: var(--purple-dark);
+  font-size: 13px;
+  font-weight: 600;
+}
 .demo-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1fr);
@@ -1153,7 +1274,6 @@
   .pricing-layout {
     gap: 50px;
   }
-  .contact-layout,
   .demo-layout,
   .account-layout {
     gap: 45px;
@@ -1176,6 +1296,14 @@
   }
 }
 @media (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 42px;
+  }
+  .contact-message-form {
+    width: 100%;
+    max-width: 680px;
+  }
   .page-hero-split .page-hero-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 42px;
@@ -1194,7 +1322,6 @@
   .pricing-conversation {
     max-width: 610px;
   }
-  .contact-layout,
   .demo-layout {
     grid-template-columns: minmax(0, 1fr);
     gap: 42px;
@@ -1243,6 +1370,25 @@
   }
 }
 @media (max-width: 767px) {
+  .contact-message-form {
+    padding: 30px 23px;
+    border-radius: 24px;
+  }
+  .contact-message-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 24px;
+  }
+  .contact-message-fields {
+    margin-top: 28px;
+    gap: 24px;
+  }
+  .contact-message-form input,
+  .contact-message-form textarea {
+    padding: 15px;
+  }
+  .contact-message-form input {
+    min-height: 56px;
+  }
   .page-hero,
   .page-hero-compact {
     padding-block: 48px;
