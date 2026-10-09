@@ -15,6 +15,11 @@ import {
 } from "@/components/MarketingPage";
 import { company } from "@/lib/company";
 import { pageMetadata } from "@/lib/page-metadata";
+import {
+  WhatChatBedsIs,
+  StreamlinedOperations,
+  RevenueOpportunities,
+} from "@/components/AboutDetails";
 
 export const metadata = pageMetadata(
   "About us",
@@ -58,6 +63,7 @@ export default function AboutPage() {
         </p>
         <PageActions secondary="See how it works" href="/how-it-works" />
       </PageHero>
+      <WhatChatBedsIs />
       <section className="page-section">
         <div className="container page-editorial">
           <SectionIntro
@@ -104,6 +110,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <StreamlinedOperations />
+      <RevenueOpportunities />
       <section className="page-section">
         <div className="container page-editorial">
           <SectionIntro

@@ -41,15 +41,15 @@ export const navigation: readonly NavigationEntry[] = [
     children: [
       { id: "about", label: "About", href: "/about", available: true },
       { id: "blog", label: "Blog", href: "/blog", available: true },
-      { id: "news", label: "News", href: "/news", available: false },
-      { id: "careers", label: "Careers", href: "/careers", available: false },
+      { id: "news", label: "News", href: "/news", available: true },
+      { id: "careers", label: "Careers", href: "/careers", available: true },
     ],
   },
   {
     id: "resources",
     label: "Resources",
     children: [
-      { id: "docs", label: "Developer docs", href: "/docs", available: false },
+      { id: "docs", label: "Developer docs", href: "/docs", available: true },
       { id: "help", label: "Help Center", href: "/help", available: false },
       { id: "privacy", label: "Privacy Policy", footerLabel: "Privacy", href: "/privacy", available: true },
       { id: "terms", label: "Terms and Conditions", footerLabel: "Terms", href: "/terms", available: true },
@@ -78,7 +78,7 @@ export function navigationLinks(ids: readonly string[]): NavigationLink[] {
 export const footerNavigation = [
   { title: "Product", links: navigationLinks(["platform", "how-it-works", "integrations-overview", "pricing"]) },
   { title: "Company", links: navigationLinks(["about", "blog", "news", "careers", "contact"]) },
-  { title: "Resources", links: navigationLinks(["docs", "help"]) },
+  { title: "Resources", links: navigationLinks(["docs", "help", "privacy", "terms"]).map((item) => ({ ...item, footerLabel: item.label })) },
 ].filter((group) => group.links.length > 0);
 
 export const legalNavigation = navigationLinks(["privacy", "terms"]);

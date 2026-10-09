@@ -50,7 +50,7 @@ Login links go directly to `https://app.chatbeds.app`, and `/login` redirects th
 
 Set `NEXT_PUBLIC_DEMO_URL` in `.env.local` for local development and in the Google Cloud build environment for deployment. Restart local development after changing it. Next.js includes public variables in browser assets at build time, so rebuild and redeploy when the booking URL changes.
 
-The compact header centers Integrations, How it works, Pricing, Company, Resources and Contact on desktop. About and Blog are grouped under Company; Privacy Policy and Terms and Conditions are grouped under Resources. The shared configuration in `lib/navigation.ts` controls destinations and availability for desktop navigation, mobile accordions and footer columns. News, Careers, Developer docs and Help Center remain hidden until their routes or approved external URLs are available. Existing Privacy and Terms pages are noindex drafts pending legal review. The three integration detail pages and three practical Blog guides remain available.
+The compact header centers Integrations, How it works, Pricing, Company, Resources and Contact on desktop. About, Blog, News and Careers are grouped under Company; Developer docs, Privacy Policy and Terms and Conditions are grouped under Resources. The shared configuration in `lib/navigation.ts` controls destinations and availability for desktop navigation, mobile accordions and footer columns. News provides an honest company-announcement state with Blog and contact links; Careers provides product context and an Open positions section without invented job listings. Developer docs provides a technical-documentation enquiry and an explicitly labeled product integration overview; no public API reference is published. Help Center remains hidden until its route or an approved external URL is available. Privacy Policy and Terms and Conditions contain basic website/enquiry content and remain noindex drafts pending legal review; structured text lives in lib/legal-content.ts. The three integration detail pages and three practical Blog guides remain available.
 
 ## Assets and content
 
@@ -67,3 +67,11 @@ The housekeeping workflow on the homepage and How it works page is a static, ser
 ## Dependency audit
 
 `npm audit --omit=dev` reports no production dependency vulnerabilities. The full audit currently reports a development-only advisory in the ESLint dependency chain (`braces` via `fast-glob` / `micromatch`). The registry does not yet provide a patched compatible version; forcing the suggested downgrade would move the Next.js lint configuration to an incompatible major. Recheck this advisory when updating the tooling.
+
+## Careers listings
+
+Add approved, current roles to the typed `openPositions` array in `lib/careers.ts`. Supply a unique id, title, description and a real HTTPS or mailto application URL; department, location and employment type are optional. `components/OpenPositions.tsx` renders the role details and a per-role application link, omitting empty optional metadata and invalid application destinations. The array starts empty, so Careers truthfully states that no roles have been published on this page yet. No general career-enquiry form or email CTA appears in the page content.
+
+## Starter legal policies
+
+Privacy and Terms cover the marketing website and enquiries, not all PMS application practices or a replacement customer subscription agreement. The shared `LegalDraft` renders structured sections from `lib/legal-content.ts` with the visible draft notice and noindex metadata. Before final publication, confirm application-specific privacy, hosting logs/cookies/providers, enquiry sharing and retention, request handling and applicable rights, plus annual cancellation/refunds/taxes/renewals and agreed service terms. No effective date or unconfirmed guarantee is invented.

@@ -6,6 +6,11 @@ import {
   SectionIntro,
 } from "@/components/MarketingPage";
 import { WhatsAppWorkflow } from "@/components/WhatsAppWorkflow";
+import {
+  CompletePMSExplanation,
+  ReservationToDailyClose,
+  HowItWorksQuestions,
+} from "@/components/HowItWorksDetails";
 import { pageMetadata } from "@/lib/page-metadata";
 
 export const metadata = pageMetadata(
@@ -46,6 +51,7 @@ export default function HowItWorksPage() {
           ))}
         </div>
       </section>
+      <CompletePMSExplanation />
       <WhatsAppWorkflow />
       <section className="page-section">
         <div className="container">
@@ -89,6 +95,8 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+      <ReservationToDailyClose />
+      <HowItWorksQuestions />
       <section className="page-section page-peach workflow-setup-section">
         <div className="container page-editorial">
           <SectionIntro title="Connect people once. Keep responsibilities clear." />

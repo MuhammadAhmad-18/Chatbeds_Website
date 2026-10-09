@@ -1,10 +1,11 @@
 import { LegalDraft } from "@/components/LegalDraft";
 import { pageMetadata } from "@/lib/page-metadata";
+import { privacyPolicy } from "@/lib/legal-content";
 
 export const metadata = {
-  ...pageMetadata("Privacy", "Draft, pending legal review", "/privacy"),
+  ...pageMetadata("Privacy Policy", "Starter privacy policy for the ChatBeds marketing website and enquiries. Draft, pending legal review.", "/privacy"),
   robots: { index: false, follow: false },
 };
 export default function PrivacyPage() {
-  return <LegalDraft title="Privacy" headings={["Information collected", "Use of information", "Sharing of information", "Data retention", "Your choices", "Contact"]} />;
+  return <LegalDraft policy={privacyPolicy} />;
 }

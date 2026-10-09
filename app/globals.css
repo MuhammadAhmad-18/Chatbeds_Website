@@ -5650,6 +5650,9 @@ img {
   .footer-main {
     grid-template-columns: minmax(360px, 2.4fr) repeat(2, minmax(0, 0.8fr)) minmax(140px, 0.8fr);
   }
+  .footer-main-expanded {
+    grid-template-columns: minmax(320px, 2.4fr) repeat(4, minmax(0, 0.8fr));
+  }
 }
 @media (max-width: 1023px) {
   .footer-brand {

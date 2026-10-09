@@ -1683,3 +1683,97 @@
     margin-top: 42px;
   }
 }
+
+/* Careers listings use the same editorial layout and light material as home. */
+.careers-positions-list {
+  display: grid;
+  gap: 20px;
+  min-width: 0;
+}
+.careers-position {
+  padding: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.careers-position h3 {
+  font-size: 22px;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+.careers-position h3 + p {
+  margin-top: 14px;
+}
+.careers-position .careers-position-meta {
+  font-size: 12px;
+  line-height: 1.7;
+}
+.careers-position .page-text-link {
+  max-width: 100%;
+}
+.careers-position .page-text-link svg {
+  flex-shrink: 0;
+}
+@media (max-width: 767px) {
+  .careers-position { padding: 22px; }
+}
+/* Readable editorial layout for the starter legal policies. */
+.legal-document {
+  max-width: 900px;
+  min-width: 0;
+}
+.legal-introduction {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--border);
+}
+.legal-policy-section {
+  padding-block: 32px;
+  border-bottom: 1px solid var(--border);
+  scroll-margin-top: 28px;
+}
+.legal-policy-section h2 {
+  display: flex;
+  align-items: baseline;
+  gap: 17px;
+  font-size: 27px;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin-bottom: 18px;
+}
+.legal-policy-section h2 > span {
+  color: var(--purple-dark);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0;
+  flex-shrink: 0;
+}
+.legal-policy-section > .page-text-link {
+  margin-top: 16px;
+}
+.legal-contact address {
+  margin-top: 18px;
+  font-style: normal;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+.legal-related {
+  padding-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 20px;
+}
+.legal-related > span {
+  font-size: 12px;
+  color: var(--muted);
+}
+@media (max-width: 767px) {
+  .legal-policy-section { padding-block: 27px; }
+  .legal-policy-section h2 { font-size: 23px; gap: 12px; }
+  .legal-document .page-text-link { overflow-wrap: anywhere; max-width: 100%; }
+  .legal-document .page-text-link svg { flex-shrink: 0; }
+}

@@ -5,7 +5,7 @@ import { BrandLogo } from "./BrandLogo";
 import { DemoButton } from "./DemoProvider";
 import { loginUrl } from "@/lib/site-links";
 import { socials } from "@/lib/socials";
-import { backToTopNavigation, footerNavigation, legalNavigation } from "@/lib/navigation";
+import { footerNavigation } from "@/lib/navigation";
 const socialIcons = { linkedin: Linkedin, instagram: Instagram, facebook: Facebook, youtube: Youtube, website: Globe2 };
 export function Footer() {
   const activeSocials = socials.filter((social) => {
@@ -17,7 +17,7 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container">
-        <div className="footer-main">
+        <div className={`footer-main${footerNavigation.some((column) => column.title === "Resources") ? " footer-main-expanded" : ""}`}>
           <div className="footer-brand" id="about">
             <BrandLogo footer />
             <p>{company.description}</p>
@@ -80,17 +80,7 @@ export function Footer() {
             })}
           </nav>
         )}
-        <div className="footer-bottom">
-          <span>
-            © {new Date().getUTCFullYear()} {company.name}. All rights reserved.
-          </span>
-          <nav className="footer-legal" aria-label="Legal">
-            {legalNavigation.map((item) => (
-              <Link key={item.id} href={item.href}>{item.footerLabel || item.label}</Link>
-            ))}
-          </nav>
-          <Link href={backToTopNavigation.href}>{backToTopNavigation.label}</Link>
-        </div>
+       
       </div>
     </footer>
   );
